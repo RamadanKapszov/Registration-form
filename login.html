@@ -5,16 +5,14 @@
 </head>
 <body>
 <h2>Login Form</h2>
-<form action="/login" method="POST">
+<form action="logout.html" method="POST">
   <label for="Email">Email:</label>
-  <input type="text" id="Email" name="Email" required><br><br>
+  <input type="text" id="Email" name="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address" ><br><br>
 
   <label for="password">Password:</label>
   <input type="password" id="password" name="password" required><br><br>
 
-  <input type="submit" value="Login" >
+  <input type="submit" value="Login">
 </form>
-
-
 </body>
 </html>
